@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易浏览器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="browser-container">
+        <!-- 地址栏 -->
+        <div class="toolbar">
+            <div class="nav-buttons">
+                <button id="backBtn" class="nav-btn" title="后退">←</button>
+                <button id="forwardBtn" class="nav-btn" title="前进">→</button>
+                <button id="refreshBtn" class="nav-btn" title="刷新">↻</button>
+            </div>
+
+            <div class="url-container">
+                <input type="text" id="urlInput" placeholder="输入网址..." />
+                <button id="goBtn">访问</button>
+            </div>
+
+            <div class="bookmarks">
+                <button id="bookmarkBtn" title="书签">★</button>
+            </div>
+        </div>
+
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <span id="statusText">就绪</span>
+            <span id="loadingIndicator" class="loading hidden">加载中...</span>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content-area">
+            <div id="content" class="content"></div>
+        </div>
+
+        <!-- 开发者工具面板 -->
+        <!-- <div class="dev-panel">
+            <div class="panel-header">
+                <span>开发者工具</span>
+                <button id="toggleDevPanel">▼</button>
+            </div>
+            <div id="devPanelContent" class="panel-content">
+                <div class="dev-section">
+                    <h4>网络请求</h4>
+                    <div id="networkInfo"></div>
+                </div>
+                <div class="dev-section">
+                    <h4>页面信息</h4>
+                    <div id="pageInfo"></div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
