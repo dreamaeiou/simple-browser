@@ -2,6 +2,7 @@
 
 ## 结构
 
+```js
 simple-browser/
 ├── package.json
 ├── main.js          # 主进程
@@ -13,6 +14,7 @@ simple-browser/
 └── browser/
     ├── engine.js    # 浏览器核心引擎
     └── network.js   # 网络请求模块
+```
 
 ## 使用方式
 
